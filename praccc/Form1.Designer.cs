@@ -306,6 +306,7 @@
             btnBack.TabIndex = 19;
             btnBack.Text = "Backspace";
             btnBack.UseVisualStyleBackColor = false;
+            btnBack.Click += btnBack_Click;
             // 
             // Form1
             // 

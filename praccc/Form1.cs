@@ -139,5 +139,18 @@ namespace praccc
                 textBox1.Text = "Error";
             }
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(textBox1.Text) && textBox1.Text != "0")
+            {
+                textBox1.Text = textBox1.Text.Substring(0, textBox1.Text.Length - 1);
+
+                if (string.IsNullOrEmpty(textBox1.Text))
+                {
+                    textBox1.Text = "0";
+                }
+            }
+        }
     }
 }
